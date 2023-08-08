@@ -1,0 +1,155 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+header {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar-list {
+  background-color: #282c34;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar-list-item {
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar-list-item-link {
+  font-size: 0.7rem;
+  width: 100%;
+  text-align: center;
+  color: #61dafb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+i {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin-block-end: 0.4rem;
+}
+
+main {
+  width: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-block-start: 0.5rem;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 80%;
+  height: 20rem;
+  margin-block-end: 1rem;
+}
+
+#content-red {
+  background-color: red;
+}
+
+#content-green {
+  background-color: green;
+}
+
+#content-blue {
+  background-color: blue;
+}
+
+#content-purple {
+  background-color: purple;
+}
+
+#content-gold {
+  background-color: darkgoldenrod;
+}
+
+#content-pink {
+  background-color: pink;
+}
+
+footer {
+  background-color: #384159;
+  height: 11rem;
+  display: flex;
+  padding-block-start: 2rem;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.footer-list {
+  display: flex;
+  column-gap: 10rem;
+  padding: 0;
+}
+
+.footer-list-item-link {
+  color: #61dafb;
+}
+
+/* Moving the navbar on top on wider screens */
+@media screen and (min-width: 992px) {
+  header {
+    top: 0;
+  }
+
+  main {
+    margin-block-start: 9rem;
+  }
+
+  .navbar-list {
+    height: 7rem;
+  }
+
+  .navbar-list-item {
+    flex-wrap: nowrap;
+    width: 25%;
+  }
+
+  .navbar-list-item-link {
+    font-size: 1.6rem;
+    width: 70%;
+  }
+
+  .navbar-list-item-link:hover {
+    transform: scale(1.2);
+    transition: all 0.2s linear;
+  }
+
+  i {
+    width: 10%;
+    margin-right: 2rem;
+  }
+
+  footer {
+    height: 10rem;
+    align-items: center;
+    padding: 0;
+    padding-block-start: 0;
+    font-size: 1.6rem;
+  }
+}
